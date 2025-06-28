@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #ffd3e0, #ffa6c9);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Eyes container */
+.eyes {
+    display: flex;
+    gap: 40px;
+}
+
+/* Eye */
+.eye {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: 5px solid #333;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -4px -4px 10px rgba(0,0,0,0.1),
+                inset 4px 4px 10px rgba(0,0,0,0.1),
+                0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Pupil */
+.pupil {
+    width: 40px;
+    height: 40px;
+    background: radial-gradient(circle at 30% 30%, #000, #333);
+    border-radius: 50%;
+    position: absolute;
+    transition: transform 0.1s linear;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+/* Button */
+button {
+    padding: 15px 40px;
+    font-size: 20px;
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e63956;
+}
